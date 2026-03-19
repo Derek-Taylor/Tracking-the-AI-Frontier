@@ -51,7 +51,6 @@ Current top-level structure:
 - `03-Building-Curriculum-NotebookLM`
 - `04-Automating-Workflows-Codex`
 - `05-What-This-Means-for-Teaching-and-Learning`
-- `06-Reflection`
 
 Important:
 
@@ -176,8 +175,7 @@ Use the section folders roughly as follows:
 - `02-The-Frontier-of-AI`: explain frontier labs, the pace of progress over roughly the last 36 months, and why static assumptions age quickly.
 - `03-Building-Curriculum-NotebookLM`: show NotebookLM as a source-grounded educator workflow, likely using a prepared Earth and space science example.
 - `04-Automating-Workflows-Codex`: show Codex-based educator workflows, especially rubric-based student feedback and the AI-built presentation site reveal.
-- `05-What-This-Means-for-Teaching-and-Learning`: interpret the demos in educational terms, including assessment validity, cognitive offloading, workflow change, equity, and ethics.
-- `06-Reflection`: closing synthesis, audience reflection, survey, and takeaway.
+- `05-What-This-Means-for-Teaching-and-Learning`: serve as the final section by interpreting the demos in educational terms, creating room for discussion, and closing with synthesis plus a survey / thank-you slide.
 
 ## Content Standards
 
@@ -214,6 +212,7 @@ As of now, this repository is in an early scaffold stage:
 - `01-Demystifing-AI` already has a section outline,
 - `01-Demystifing-AI` now also contains slide folders derived from that outline,
 - `02-The-Frontier-of-AI` has a section outline and should follow the same slide-folder pattern,
+- `05-What-This-Means-for-Teaching-and-Learning` is now the final section of the deck,
 - the remaining sections are present as placeholders for further development.
 
 Agents should preserve that scaffold while helping it become more complete.
