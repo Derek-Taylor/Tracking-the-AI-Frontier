@@ -1,3 +1,5 @@
-# What Do We Mean by "AI"?
+# Why Educators Need an Updated Mental Model
 
-![Layered diagram showing Artificial Intelligence, Machine Learning, Deep Learning, and Generative AI / Foundation Models / Large Language Models.](ai-layers.png)
+![AI capability is moving quickly while education changes more slowly, with this talk positioned at the intersection.](ai-vs-edu-progress.png)
+
+AI capability is moving quickly. Education changes more slowly. This talk sits at that intersection.

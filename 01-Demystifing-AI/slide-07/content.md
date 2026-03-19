@@ -1,11 +1,8 @@
-# Powerful, Useful, and Imperfect
+# At a High Level, How Do These Models Work?
 
-| Useful Capabilities | Important Limitations |
-| --- | --- |
-| Summarize | Can hallucinate |
-| Explain | Can be confidently wrong |
-| Generate | Can miss nuance |
-| Organize | Can reflect bias |
-| Adapt tone/style | Needs verification |
+![Simple conceptual visual showing next-token prediction and pattern learning at scale.](next-token-prediction.png)
 
-AI is powerful, but it must be used with judgment.
+- Trained on enormous amounts of data
+- Learns patterns and relationships
+- Predicts what comes next in context
+- Produces useful outputs from pattern prediction at scale

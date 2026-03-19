@@ -1,37 +1,34 @@
-# Slide 05 Blueprint
+# Slide 04 Blueprint
 
 ## Purpose
 
-Show that the significance of current AI is not perfection, but breadth and flexibility across many tasks.
+Give the audience a broad definition of AI before narrowing toward what people usually mean by the term today.
 
 ## Core Takeaway
 
-What feels new is that one category of system can support many forms of generation, transformation, and interaction.
+AI is a broad umbrella term, and today's public conversation usually refers to a narrower set of modern generative systems.
 
 ## Include
 
-- A title that signals the qualitative difference of current systems.
-- A visual centered on one model with branches or spokes to capabilities such as:
-  - writing,
-  - summarizing,
-  - explaining,
-  - generating images,
-  - analyzing documents,
-  - coding,
-  - organizing information,
-  - providing feedback.
+- The slide title.
+- A layered or funnel-style visual showing:
+  - Artificial Intelligence
+  - Machine Learning
+  - Deep Learning
+  - Generative AI / Foundation Models / Large Language Models
 
 ## Visual / Layout Direction
 
-- Build this as a breadth slide.
-- The image file should live in this folder as `current-ai-capabilities.png`.
-- The visual should make it obvious that the issue is not one app, but a flexible category of systems.
+- Let the image do most of the explanatory work.
+- The image file should live in this folder as `ai-layers.png`.
+- Avoid heavy paragraph text on the slide.
 
 ## Speaker Guidance
 
-- Emphasize range over perfection.
-- Connect that range to why these systems are educationally significant.
+- Explain that AI did not begin with ChatGPT.
+- Note that rule-based systems, expert systems, and machine learning all belong to the broader history.
+- Clarify that in common usage, people often mean large generative models.
 
 ## Transition
 
-From broad usefulness, move into a restrained explanation of how these systems work at a high level.
+Once the audience has the broad category in mind, move to what makes the current wave feel different.

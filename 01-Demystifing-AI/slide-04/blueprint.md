@@ -1,34 +1,33 @@
-# Slide 04 Blueprint
+# Slide 03 Blueprint
 
 ## Purpose
 
-Give the audience a broad definition of AI before narrowing toward what people usually mean by the term today.
+Visually establish the pace mismatch between AI progress and institutional change in education.
 
 ## Core Takeaway
 
-AI is a broad umbrella term, and today's public conversation usually refers to a narrower set of modern generative systems.
+Educators need to update their understanding because the tools are moving faster than school systems typically do.
 
 ## Include
 
-- The slide title.
-- A layered or funnel-style visual showing:
-  - Artificial Intelligence
-  - Machine Learning
-  - Deep Learning
-  - Generative AI / Foundation Models / Large Language Models
+- A title that signals urgency without sounding alarmist.
+- A simple visual showing:
+  - AI capability moving quickly,
+  - education changing more slowly,
+  - and the presentation positioned where those lines meet.
+- A short sentence or caption reinforcing the main point.
 
 ## Visual / Layout Direction
 
-- Let the image do most of the explanatory work.
-- The image file should live in this folder as `ai-layers.png`.
-- Avoid heavy paragraph text on the slide.
+- Use a simple, high-clarity visual rather than a dense chart.
+- The image file should live in this folder as `ai-vs-edu-progress.png`.
+- The slide should read quickly from the back of a room.
 
 ## Speaker Guidance
 
-- Explain that AI did not begin with ChatGPT.
-- Note that rule-based systems, expert systems, and machine learning all belong to the broader history.
-- Clarify that in common usage, people often mean large generative models.
+- Emphasize that many people are still operating from an outdated model of current AI capability.
+- Keep the tone urgent but measured.
 
 ## Transition
 
-Once the audience has the broad category in mind, move to what makes the current wave feel different.
+Move from urgency into a shared definition of what "AI" actually means.

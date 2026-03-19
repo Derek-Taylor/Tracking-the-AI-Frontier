@@ -1,8 +1,3 @@
-# At a High Level, How Do These Models Work?
+# Why Today's AI Feels Different
 
-![Simple conceptual visual showing next-token prediction and pattern learning at scale.](next-token-prediction.png)
-
-- Trained on enormous amounts of data
-- Learns patterns and relationships
-- Predicts what comes next in context
-- Produces useful outputs from pattern prediction at scale
+![A central AI model with branches to writing, summarizing, explaining, generating images, analyzing documents, coding, organizing information, and providing feedback.](current-ai-capabilities.png)

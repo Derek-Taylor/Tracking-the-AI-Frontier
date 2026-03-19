@@ -1,32 +1,35 @@
-# Slide 07 Blueprint
+# Slide 06 Blueprint
 
 ## Purpose
 
-End the section with a balanced account of what current AI systems do well and where they remain unreliable.
+Demystify current models with a surface-level explanation that is conceptually legitimate but not technically heavy.
 
 ## Core Takeaway
 
-Modern AI is genuinely useful, but educational use still requires verification, judgment, and oversight.
+These systems are trained on large amounts of data to learn patterns and make predictions in context; they are powerful without being magical.
 
 ## Include
 
-- A title that captures the balance of the slide.
-- A two-column comparison of useful capabilities and important limitations.
-- A short concluding line such as: `AI is powerful, but it must be used with judgment.`
+- The slide title.
+- A simple conceptual visual for next-token prediction.
+- A few short bullets covering:
+  - large-scale training,
+  - pattern learning,
+  - prediction in context,
+  - useful generation from scale.
 
 ## Visual / Layout Direction
 
-- This can remain text-forward because the contrast is the point.
-- If a more visual treatment is later preferred, preserve the same balanced structure.
+- Keep the slide minimal and easy to process.
+- The image file should live in this folder as `next-token-prediction.png`.
+- Do not overload this slide with technical jargon or process detail.
 
 ## Speaker Guidance
 
-- Keep the audience out of both extremes:
-  - "AI is magic"
-  - "AI is useless"
-- Emphasize the middle position: useful, impressive, and still fallible.
-- Connect this directly to educational responsibility and human judgment.
+- Mention neural networks and transformers only at a high level.
+- Do not drift into math, embeddings, or optimization details.
+- The audience should leave thinking: this is understandable enough to take seriously.
 
 ## Transition
 
-Close the section by setting up the next question: what has changed at the frontier, and why does that matter right now?
+Once the system feels less mysterious, move to the balancing slide on strengths and limitations.
