@@ -94,6 +94,8 @@ Use zero-padded slide folder names in presentation order:
 - `slide-03`
 - etc.
 
+Slide numbering should follow the presentation-wide sequence already established in the repository rather than resetting inside each section. For example, if section 1 ends at `slide-08`, section 2 should begin at `slide-09`.
+
 Each slide folder should normally contain:
 
 - `content.md`
@@ -211,6 +213,7 @@ As of now, this repository is in an early scaffold stage:
 - the top-level section folders exist,
 - `01-Demystifing-AI` already has a section outline,
 - `01-Demystifing-AI` now also contains slide folders derived from that outline,
+- `02-The-Frontier-of-AI` has a section outline and should follow the same slide-folder pattern,
 - the remaining sections are present as placeholders for further development.
 
 Agents should preserve that scaffold while helping it become more complete.
