@@ -12,9 +12,9 @@ The talk is designed for K-12 educators and focuses on:
 2. explaining the pace of progress at the frontier,
 3. showing concrete educator-relevant examples,
 4. interpreting the implications for curriculum, assessment, and teaching,
-5. and closing with reflection.
+5. and closing with reflection and a survey.
 
-This is not a general software project. It is a presentation-content project organized around the major sections of the talk. Agents working here should treat the repository as a narrative workspace for developing slides, supporting materials, demos, and section-level thinking.
+This is a presentation-content project, not a typical software project. The repository should be treated as a narrative workspace for building, revising, and delivering the slide deck and its supporting materials.
 
 ## Audience And Tone
 
@@ -27,7 +27,7 @@ The primary audience is K-12 educators. Content should be:
 - not overly technical,
 - and attentive to both opportunity and risk.
 
-The talk should help educators update their mental model of AI without sounding promotional, alarmist, or overly speculative.
+The goal is to help educators update their mental model of AI without sounding promotional, alarmist, or speculative for its own sake.
 
 ## Core Through-Line
 
@@ -38,144 +38,111 @@ The presentation argues that AI capabilities are advancing quickly enough that e
 - how that changes teacher and student work,
 - and why curriculum and assessment assumptions may need revision.
 
-When contributing to any section, preserve that through-line.
+Preserve that through-line in all slide work.
 
 ## Repository Structure
 
-The top level of the repository is organized by the major sections of the talk. The numeric prefixes indicate presentation order and should be preserved.
+The canonical slide files now live in a centralized `slides/` directory.
 
 Current top-level structure:
 
-- `01-Demystifing-AI`
-- `02-The-Frontier-of-AI`
-- `03-Building-Curriculum-NotebookLM`
-- `04-Automating-Workflows-Codex`
-- `05-What-This-Means-for-Teaching-and-Learning`
+- `slides/`
+- `AGENTS.md`
+- `slide_master.md`
 
-Important:
+Within `slides/`:
 
-- Folder names reflect the current repository state and should be treated as canonical unless the user explicitly requests a rename.
-- The `01-Demystifing-AI` spelling is currently part of the real folder name on disk. Do not silently "correct" it in code or file paths.
+- `slide-01.md` through the current final slide
+- `imgs/` for slide images
+- `references/` for supporting documents and working materials
 
-## How To Read A Section
+## Canonical Sources
 
-Each section folder represents one major part of the talk.
+Use the files in `slides/` as the source of truth for presentation content.
 
-Within a section, the expected structure is:
+- `slides/slide-XX.md` contains the outward-facing content for a single slide.
+- `slide_master.md` contains the full presentation runthrough in one file.
 
-1. a section outline markdown file,
-2. slide subfolders for the slides that belong to that section,
-3. any assets or support files needed for those slides.
+If the two ever drift, treat that as something to resolve, not something to ignore.
 
-The outline file is the section-level source of truth. It should explain:
+## Slide File Model
 
-- the purpose of the section,
-- the core message,
-- the likely sequence of ideas,
-- and what each slide in the section is trying to accomplish.
+Each slide is a single markdown file in `slides/` named with deck-wide numbering:
 
-Example currently present:
-
-- `01-Demystifing-AI/section-01-outline.md`
-
-At the moment, the first section already contains its outline file, while the later sections are still mostly scaffold folders. Agents should use the first section as the clearest concrete example of the intended pattern.
-
-## Slide Folder Model
-
-Each slide should live in its own subfolder inside the relevant section folder.
-
-A slide folder is the atomic unit of work for contributors. If an agent is asked to work on "a slide" or "part of a section," that work should usually happen inside one slide subfolder.
-
-Use zero-padded slide folder names in presentation order:
-
-- `slide-01`
-- `slide-02`
-- `slide-03`
+- `slide-01.md`
+- `slide-02.md`
+- `slide-03.md`
 - etc.
 
-Slide numbering should follow the presentation-wide sequence already established in the repository rather than resetting inside each section. For example, if section 1 ends at `slide-08`, section 2 should begin at `slide-09`.
+Slide numbering is global across the full presentation and should remain continuous.
 
-Each slide folder should normally contain:
-
-- `content.md`
-- `blueprint.md`
-- any slide-specific image assets referenced by `content.md`
-
-Typical slide-folder responsibilities may include:
-
-- slide copy,
-- speaker notes,
-- citations or research notes,
-- visuals or image prompts,
-- supporting assets,
-- or implementation details for the presentation site.
-
-If the exact internal file pattern for slide folders has not been established yet, follow the existing local conventions in that section and keep the structure simple and easy for the next contributor to understand.
-
-### `content.md`
-
-`content.md` is for outward-facing slide content only.
-
-It should contain only what is intended to appear on the slide, such as:
+Each slide markdown file should contain only slide-facing content, such as:
 
 - the slide title,
-- visible bullets or short body text,
+- visible bullets or body text,
 - image references,
-- captions or labels that belong on the slide.
+- links intended to appear on the slide,
+- or short labels/captions that belong on the slide.
 
-It should not contain:
+Do not place speaker notes, implementation notes, or planning commentary inside the slide markdown files.
 
-- implementation notes,
-- build instructions,
-- speaker notes,
-- rationale,
-- or reminders to future contributors.
+## Images
 
-If a slide depends on an image, reference the image directly in `content.md` and assume the image file lives in the same slide folder.
+All slide images belong in:
 
-### `blueprint.md`
+- `slides/imgs/`
 
-`blueprint.md` is the internal planning file for the slide.
+When referencing an image from a slide markdown file in `slides/`, use a relative path like:
 
-It should explain:
+- `imgs/example.png`
 
-- the purpose of the slide,
-- the core takeaway,
-- what to include,
-- what visual or layout is expected,
-- what should be emphasized when presenting,
-- and how the slide transitions into the next one.
+If an image is referenced but does not exist yet, keep the reference stable so a future contributor can add the asset in the expected location.
 
-This file is where agents should capture the build plan and presentation intent without cluttering the outward-facing slide content.
+## References
 
-## Recommended Agent Workflow
+Supporting documents belong in:
+
+- `slides/references/`
+
+Use this folder for:
+
+- PDFs,
+- rubric documents,
+- prompt files,
+- sample work,
+- feedback outputs,
+- CSV trackers,
+- section outlines that still need to be preserved,
+- and similar support materials that are not themselves slides.
+
+The Codex walkthrough materials are grouped in:
+
+- `slides/references/codex_example/`
+
+Keep those materials together.
+
+## Recommended Workflow
 
 When picking up work in this repo:
 
-1. Read this `AGENTS.md` first.
-2. Identify the relevant numbered section.
-3. Read that section's outline file before editing or creating slide-level materials.
-4. Treat the section outline as the narrative and pedagogical guide for all work in that folder.
-5. Make slide-level additions inside the appropriate slide subfolder rather than scattering files loosely through the section.
-6. Keep outputs aligned to the educator audience and the overall talk cadence.
+1. Read this `AGENTS.md`.
+2. Review `slide_master.md` to understand the current full-deck arc.
+3. Edit the relevant `slides/slide-XX.md` files directly.
+4. Add or update any images in `slides/imgs/`.
+5. Add or update supporting docs in `slides/references/` when needed.
+6. Keep numbering, wording, and references aligned across the deck.
 
-If a requested section does not yet have its outline file, infer from:
+If a requested change affects multiple slides, update all affected slide files rather than patching only one local instance.
 
-- the section folder name,
-- the overall talk arc in this file,
-- and any existing neighboring materials.
+## Slide Range Map
 
-When creating a missing section outline, make it explicit that it is serving as the section-level scaffold for future slide development.
+Use the current slide ranges roughly as follows:
 
-## Section Intent Map
-
-Use the section folders roughly as follows:
-
-- `01-Demystifing-AI`: define AI broadly, reduce mystique, explain current models at a surface level, establish strengths and limits.
-- `02-The-Frontier-of-AI`: explain frontier labs, the pace of progress over roughly the last 36 months, and why static assumptions age quickly.
-- `03-Building-Curriculum-NotebookLM`: show NotebookLM as a source-grounded educator workflow, likely using a prepared Earth and space science example.
-- `04-Automating-Workflows-Codex`: show Codex-based educator workflows, especially rubric-based student feedback and the AI-built presentation site reveal.
-- `05-What-This-Means-for-Teaching-and-Learning`: serve as the final section by interpreting the demos in educational terms, creating room for discussion, and closing with synthesis plus a survey / thank-you slide.
+- `slide-01` to `slide-08`: demystifying AI
+- `slide-09` to `slide-12`: the AI frontier
+- `slide-13` to `slide-14`: NotebookLM
+- `slide-15` to `slide-26`: Codex workflow demo
+- `slide-27` to `slide-32`: implications, discussion, close, and survey
 
 ## Content Standards
 
@@ -185,7 +152,7 @@ Contributions should generally aim for:
 - concrete examples over abstraction,
 - educational relevance over general AI commentary,
 - balanced treatment of benefits and limitations,
-- and smooth transitions from one section to the next.
+- and smooth transitions from one part of the talk to the next.
 
 Avoid:
 
@@ -196,34 +163,20 @@ Avoid:
 
 ## File And Naming Conventions
 
-- Preserve numeric prefixes on section folders.
-- Keep materials grouped inside the appropriate section.
-- Prefer descriptive markdown filenames.
-- For slide work, prefer one slide per subfolder rather than mixing multiple slides into a single loose document.
-- Keep slide images in the same `slide-XX` folder as the markdown files that reference them.
-- Keep `content.md` presentation-facing and `blueprint.md` contributor-facing.
-- Do not rename major folders or reorganize sections without explicit approval, because the folder order represents the presentation flow.
+- Preserve zero-padded slide numbering.
+- Keep slide content in `slides/slide-XX.md`.
+- Keep images in `slides/imgs/`.
+- Keep supporting materials in `slides/references/`.
+- Prefer descriptive filenames for support materials.
+- Do not create alternate slide-content copies in other folders.
 
-## Current State Notes
-
-As of now, this repository is in an early scaffold stage:
-
-- the top-level section folders exist,
-- `01-Demystifing-AI` already has a section outline,
-- `01-Demystifing-AI` now also contains slide folders derived from that outline,
-- `02-The-Frontier-of-AI` has a section outline and should follow the same slide-folder pattern,
-- `05-What-This-Means-for-Teaching-and-Learning` is now the final section of the deck,
-- the remaining sections are present as placeholders for further development.
-
-Agents should preserve that scaffold while helping it become more complete.
-
-## Definition Of Done For Contributions
+## Definition Of Done
 
 A contribution is in good shape when:
 
-- it clearly belongs to one section,
-- it supports the talk's narrative arc,
-- it is easy for another agent to find and continue,
-- and it leaves the repository more structured, not less.
+- it clearly improves the relevant slide or support material,
+- it stays aligned with the deck-wide narrative,
+- it uses the centralized `slides/` structure correctly,
+- and it leaves the repository easier for the next contributor to understand.
 
 When in doubt, optimize for clarity, continuity, and handoff quality.
